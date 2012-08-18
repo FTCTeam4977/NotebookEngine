@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Team 4977 Engineering Notebook
+		</title>
+		<style type="text/css">
+
+			a:link {
+				color: blue;
+			}
+
+			a:visited {
+				color: blue;
+			}
+
+			a:hover {
+				color: blue;
+			}
+
+			a:active {
+				color: blue;
+			}
+
+			body
+			{
+				font-family: monospace;
+			}   
+			
+			.listHolder
+			{
+				width: 700px;
+				margin: auto;
+				position:relative;
+			}
+			
+			
+			
+			#wapper
+			{
+				width: 700px;
+				margin: auto;
+			}
+			
+			.entry
+			{
+				border-style: solid;
+				border-width: 1px;
+				padding: 5px;
+				margin-bottom: 20px;
+			}
+			
+			#back
+			{
+				float: left;
+			}
+			
+			img
+			{
+				text-align:center;
+				margin:auto;
+				display:block;
+			}
+
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="navBar.css" />
+	</head>
+	<body>
+		<div id="wapper">
+		</div>
+			<div id="container">
+				{if $isSingleEntry} <a href="index.html">Back</a> {/if}<br>
+				<br>
+				{foreach $entries as $entry}
+				<div class="entry">
+					Recorded on: {$entry.date} {$entry.content} {if !$isSingleEntry} <a href="{$entry.link}">Permalink</a> {/if}
+				</div>{/foreach}
+			</div>
+
+	</body>
+</html>
