@@ -12,4 +12,4 @@ How we do it:
 Installing
 -------
 
-Getting this setup on your webserver is easy, edit git.sh to use the path to your repository and run git.sh whenever there is a change to the repository.
+Getting this setup on your webserver is easy, edit git.sh and generator.php to use the path to your repository and run git.sh whenever there is a change to the repository.
