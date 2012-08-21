@@ -9,15 +9,6 @@ date_default_timezone_set("America/New_York");
 require_once("Smarty.class.php");
 require_once("markdown.php");
 
-function compare($a, $b)
-{
-        $aT = strtotime($a['time']);
-        $bT = strtotime($b['time']);
-        if ( $aT == $bT )
-                return 0;
-        return ( $aT < $bT ) ? -1 : 1;
-}
-
 function filenameToTime($fn)
 {	
 	$a = str_split($fn);
